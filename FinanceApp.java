@@ -252,5 +252,6 @@ public class FinanceApp
                 System.out.printf("%s: $%.2f%n", categories[i], amounts[i]);
             }
         }
+        
     }
 }
