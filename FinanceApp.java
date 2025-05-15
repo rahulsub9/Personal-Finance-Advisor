@@ -30,7 +30,7 @@ public class FinanceApp
             displayExitMessage();
         }
         //Close scanner when done
-        scanner.close();
+        console.close();
     }
 
     //Displays a welcome message
@@ -487,9 +487,9 @@ public class FinanceApp
             if (console.hasNextInt())
             {
                 // Read the integer.
-                int currentUserInput = scanner.nextInt();
+                int currentUserInput = console.nextInt();
                 // Consume the rest of the line (including the newline character) to  prevent issues with subsequent nextLine() calls if any.
-                scanner.nextLine();
+                console.nextLine();
                 // Check if the entered integer is within the specified range [min, max].
                 if (currentUserInput >= min && currentUserInput <= max)
                 {
@@ -509,7 +509,7 @@ public class FinanceApp
                 //Input is not an integer
                 System.out.println("Invalid input. Please enter a whole number.");
                 //Do this to make sure the scanner sees any more Strings after searching for an int
-                scanner.nextLine();
+                console.nextLine();
             }
         }
         //Finally return the validated int value
@@ -532,9 +532,9 @@ public class FinanceApp
             if (console.hasNextDouble())
             {
                 // Read the double.
-                double currentUserInput = scanner.nextInt();
+                double currentUserInput = console.nextInt();
                 // Consume the rest of the line (including the newline character) to  prevent issues with subsequent nextLine() calls if any.
-                scanner.nextLine();
+                console.nextLine();
                 // Check if the entered double is within the specified range [min, max].
                 if (currentUserInput >= min && currentUserInput <= max)
                 {
@@ -554,7 +554,7 @@ public class FinanceApp
                 //Input is not an double
                 System.out.println("Invalid input. Please enter a double.");
                 //Do this to make sure the scanner sees any more Strings after searching for an double
-                scanner.nextLine();
+                console.nextLine();
             }
         }
         //Finally return the validated double value
