@@ -19,8 +19,13 @@ Update Financial Information:
 Allows users to modify their profile values
 Interactive Console Interface: 
 Guides the user through menus and prompts for input
-Inpute Validation:
+Input Validation:
 Using helper methods, user input is validated every time to ensure proper information
+
+Using the Application:
+
+Upon starting the application, you will be greeted with a welcome message.
+User class:
 
 
 
